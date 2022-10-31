@@ -27,11 +27,9 @@ def tabluar_skewness_test(model):
     
     name = os.path.split(model)
     
-    my_skew = 3 * ((statistics.mean(df['accuracy'])-statistics.median(df['accuracy']))/statistics.stdev(df['accuracy']))
-    
     os.makedirs(os.path.dirname(outfile), exist_ok=True)
     outfilewriter = open(outfile, "a", encoding="utf-8")
     
-    outfilewriter.write(f'[{name[1]}, {my_skew}, {skew}]\n')
+    outfilewriter.write(f'[{name[1]}, {skew}]\n')
     
     outfilewriter.close()
