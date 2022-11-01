@@ -13,7 +13,7 @@ def tabluar_skewness_test(model):
     overwriting.
     
     The output list is formatted:
-    [`model`, skewness value, p-value]  
+    [`model`, skewness value]  
     If more output variables of the scipy.stats.linregress function are required, these can be added by altering line 
     33.
     '''
